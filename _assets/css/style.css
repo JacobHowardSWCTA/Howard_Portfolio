@@ -1,0 +1,166 @@
+/*
+#225378
+#1695A3
+#ACF0F2
+#F3FFE2
+#EB7F00
+*/
+body {
+	font-size: 1em;
+	font-weight:normal;
+	font-family: Georgia,Helvetica, Arial, sans-serif;
+	color: #000000; /*black*/
+	text-align: left;
+	margin-left:10%;
+	margin-right:10%;
+	border:#000000;
+	margin: 0 auto;
+	width:100%;
+	min-width: 720px;
+
+	
+}
+	/*position: static|absolute|fixed|relative|initial|inherit;*/
+
+h1 {
+	font-size: 6em;
+	font-weight: bold;
+	font-family: Impact, Lucida,"Comic Sans MS", sans-serif ;
+	color:grey;
+	text-align: center;
+	/*border:1px solid orange;*/
+	margin:0 auto;
+	background-color:#efefef;
+	width:auto;
+}
+h2 {
+	font-size: 4em;
+	font-weight: bold;
+	font-family: Impact, Lucida,"Comic Sans MS", sans-serif ;
+	color:grey;
+	text-align: center;
+	border:1px solid orange;
+	margin:0 auto;
+	background-color:#efefef;
+	width:auto;
+}
+div {
+	color: black;
+	text-align: center;
+	background-color: #D9D9D9;
+    padding: 0px;
+    /*border: 1px solid cyan;*/
+    margin: 0 auto;
+	width:0px;
+}
+#customShirt{
+	background-color:white;
+	
+}
+p {
+	font-size: 1.5em;
+	font-weight: normal;
+	font-family: Georgia,Helvetica, Arial, sans-serif;
+	color: black;
+	text-align: center ;
+	background-color: #efefef;
+    padding: 1em;
+    margin: 10px !important;
+	width:auto;
+}
+li {
+	font-size: 1.15em;
+	font-weight: normal;
+	font-family: Georgia,Helvetica, Arial, sans-serif;
+	color: black;
+	text-align: center;
+	/*border:1px solid cyan;*/
+	margin:0 auto;
+	background-color:#efefef;
+	width:auto;
+}
+
+ul{
+	border:1px dotted green;
+	margin:0 auto;
+	background-color:#efefef;
+	color:white;
+	width:auto;
+	}
+table{border: 1px solid black;}
+td{background-color:bisque;}
+thead{color:red;}
+
+#overview{
+	text-decoration:underline;
+	padding:10%;
+	
+}
+
+#main{
+	background-color:#efefef;
+}
+
+.info{
+	width:40%;font-size:14px;
+}
+div.info { 
+    width: 40%;
+    font-size: 1.2em;
+	display:inline;
+}
+
+.temp{
+	font-style:italic;
+}
+
+
+a {
+	color: black;
+	background-color: #efefef;
+	text-decoration:none;
+}
+a:hover{background-color: black;
+color:white;
+}
+nav a:hover {
+	color: white;
+	background-color: red;
+	font-size: 125%;
+}
+
+p#overview:first-letter {
+	font-family:cursive;
+	font-size:40px;
+}
+nav { 
+    clear: left;
+	text-align:center;
+	padding:0px;
+    min-width: 720px;
+  }
+.unit2{
+  width: 250px;
+  height: 150px;
+  align-content:center
+}
+nav a{
+	padding: 0.25em 1em;
+	text-decoration:none;
+	background-color:indianred;
+	border-bottom: 2px solid black;
+	border-left:2px solid black;
+	border-right:2px solid black;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+
+
+button:hover, button:focus, button:active{
+	/*swap colors*/
+	color:#ecf0f1;
+	background-color:#95a5a6;
+	cursor: pointer;
+}
+
+div #clock{background-color:#9b59b6}

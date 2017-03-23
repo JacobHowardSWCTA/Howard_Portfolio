@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="_assets/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="_assets/css/style.css">
+    <meta charset="utf-8">
+    <title>Web Portfolio: Jacob Howard-Javascript</title>
+     <style>
+		 button{
+    background-color: #ecf0f1;
+    color: black;
+    border: 5px solid indianred;
+	padding:15px;
+}
+	 </style>
+     <script>
+  alert ('Javascript is working');
+
+  function showAlert() { 
+    alert ('function showAlert was called');
+    var myText = "This can be whatever text you like!";
+    alert (myText);
+  }
+		  function updateTime() { 
+    var now = new Date();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+    var currentTime = hours + ':' + minutes + ':' + seconds;    
+    var myClock = document.getElementById('clock');
+    myClock.innerHTML = currentTime;
+			  if (minutes < 10) { 
+    minutes = '0' + minutes;
+  }
+  if (seconds < 10) { 
+    seconds = '0' + seconds;
+  }				
+  if (hours >= 12 && hours < 24) { 
+    var timeOfDay = 'pm';
+  }
+  else { 
+    var timeOfDay = 'am'; 
+  }
+  if (hours > 12) { 
+    hours = hours - 12;
+  }
+  var currentTime = hours + ':' + minutes + ':' + seconds + '  ' + timeOfDay;
+  }
+  function toggleClock() { 
+    var myClock = document.getElementById('clock');
+    var displaySetting = myClock.style.display;
+    var clockButton = document.getElementById('clockButton');
+    if (displaySetting == 'block') { 
+      myClock.style.display = 'none';
+      clockButton.innerHTML = 'Show clock';
+    }
+    else { 
+      myClock.style.display = 'block';
+      clockButton.innerHTML = 'Hide clock';
+    }
+  }  
+  </script>
+  </head>
+<body onload="setInterval('updateTime()',1000)">
+  <nav style="display:inline;">
+    	<a href = "index.html">Home</a>
+        <a href = "accessibility.html">Accessiblity</a>
+        <a href = "usability.html">Usability</a>
+        <a href = "graphics.html">Graphics</a>
+        <a href = "javascript.html">Javascript</a>
+        <a href = "tools.html">Tools</a>
+        <a href = "video.html">Video</a>
+    </nav>
+	
+  	<button onClick="showAlert()">Show Alert</button>
+  	<div id="clock"></div>
+  	<button onclick="toggleClock()" id="clockButton">Show clock</button>
+	<div id="customShirt">
+ 		<img src="_assets/images/customShirt.jpg" style="height:20%; width:20%;">
+ 	</div>
+  	<form action="Clock.html">
+  		<fieldset>
+			<legend>Custom T-shirt</legend>
+			Front Personalized text:<br>
+			<input type="text" name="frontText" value="Enter Text here"><br>
+			Back Personalized Text (Optional)<br>
+			<input type="text" name="backText" value="Enter Text here"><br><br>
+			<legend>Sizes:</legend>
+  			<input type="radio" name="grade" value="small" checked>S<br>
+  			<input type="radio" name="grade" value="medium">M<br>
+  			<input type="radio" name="grade" value="large">L<br>
+  			<input type="radio" name="grade" value="extra_large">XL<br>
+  			<input type="radio" name="grade" 
+  			value="extra_extra_large">XXL<br>
+		<a href="Clock.html"><input type="submit" value="Submit"></a>
+	 	</fieldset>
+	</form>
+    
+  </body>
+</html>
